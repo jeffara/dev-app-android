@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DemoLayoutApp</string>
+    <string name="lblUser">Usuario:</string>
+    <string name="lblPassword">Senha:</string>
+    <string name="lblHintUser">Informe seu Usuario</string>
+    <string name="lblHintPassword">Informe sua Senha</string>
+    <string name="lblBtnLogin">Login</string>
+    <string name="lblName">Nome:</string>
+    <string name="lblHintName">Informe seu Nome Completo</string>
+    <string name="lblMail">E-Mail:</string>
+    <string name="lblHintMail">Informe seu E-Mail</string>
+    <string name="lblConfirmPassword">Confirme sua Senha:</string>
+    <string name="lblHintConfirmPassword">Confirme sua Senha</string>
+    <string name="lblAge">Idade:</string>
+    <string name="lblHintAge">Informe sua Idade</string>
+    <string name="lblGender">Sexo:</string>
+    <string name="lblSignUp">Cadastrar</string>
+    <string name="opGenderMale">Masculino</string>
+    <string name="opGenderFemale">Feminino</string>
+</resources>

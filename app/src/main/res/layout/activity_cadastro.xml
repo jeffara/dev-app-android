@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CadastroActivity">
+
+    <TextView
+        android:id="@+id/tvNameID"
+        android:text="@string/lblName"
+        style="@style/textView"/>
+
+    <EditText
+        android:id="@+id/etNameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lblHintName" />
+
+    <TextView
+        android:id="@+id/tvMailID"
+        style="@style/textView"
+        android:text="@string/lblMail" />
+
+    <EditText
+        android:id="@+id/etMailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lblHintMail"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/tvPasswordID"
+        style="@style/textView"
+        android:text="@string/lblPassword" />
+
+    <EditText
+        android:id="@+id/etPasswordID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lblHintPassword"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/tvConfirmPasswordID"
+        style="@style/textView"
+        android:text="@string/lblConfirmPassword" />
+
+    <EditText
+        android:id="@+id/etConfirmPasswordID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lblHintConfirmPassword"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvAgeID"
+                style="@style/textView"
+                android:text="@string/lblAge" />
+
+            <EditText
+                android:id="@+id/etAgeID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lblHintAge"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvGenderID"
+                style="@style/textView"
+                android:text="@string/lblGender" />
+
+            <Spinner
+                android:id="@+id/etGenderID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/genders" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignUpID"
+        style="@style/textView"
+        android:text="@string/lblSignUp" />
+
+</LinearLayout>
