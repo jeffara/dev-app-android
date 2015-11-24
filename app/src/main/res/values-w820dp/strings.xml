@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_menu_cadastrar_main">Cadastrar</string>
+    <string name="lbl_tab_classicos">Clássicos</string>
+    <string name="lbl_tab_esportivos">Esportivos</string>
+    <string name="lbl_tab_luxuosos">Luxuosos</string>
+</resources>

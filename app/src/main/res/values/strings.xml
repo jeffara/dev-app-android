@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CarroApp</string>
+    <string name="title_menu_cadastrar_main">Cadastrar</string>
+    <string name="title_menu_configuracoes_main">Configuração</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_tab_classicos">Clássicos</string>
+    <string name="lbl_tab_esportivos">Esportivos</string>
+    <string name="lbl_tab_luxuosos">Luxuosos</string>
+</resources>
