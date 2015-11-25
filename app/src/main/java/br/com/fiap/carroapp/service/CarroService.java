@@ -11,6 +11,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.fiap.carroapp.R;
 import br.com.fiap.carroapp.model.CarroBean;
 
 /**
@@ -22,10 +23,10 @@ public class CarroService {
         public CarroService(Context context) {
             this.context = context;
         }
-        public String loadJSONFromAsset(int idRaw) {
+        public String loadJSONFromRaw(int idRaw) {
             String json;
             try {
-                //InputStream is = context.getResources().openRawResource(R.raw.carros_esportivos);
+//                InputStream is = context.getResources().openRawResource(R.raw.carros_esportivos);
                 InputStream is = context.getResources().openRawResource(idRaw);
                 int size = is.available();
                 byte[] buffer = new byte[size];

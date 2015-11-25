@@ -1,9 +1,11 @@
 package br.com.fiap.carroapp.adapter;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import br.com.fiap.carroapp.R;
 import br.com.fiap.carroapp.fragment.CarrosFragment;
 
 /**
@@ -18,7 +20,26 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return new CarrosFragment();
+
+        Fragment carrosFragment = new CarrosFragment();
+        Bundle args = new Bundle();
+
+        switch (position) {
+            case 0:
+                args.putInt("tipo", R.raw.carros_classicos);
+                break;
+            case 1:
+                args.putInt("tipo", R.raw.carros_esportivos);
+                break;
+            case 2:
+                args.putInt("tipo", R.raw.carros_luxuosos);
+                break;
+        }
+
+        //Realiza a associacao de um Bundle de parametros ao Fragment que sera retornado
+        carrosFragment.setArguments(args);
+
+        return carrosFragment;
     }
 
     @Override

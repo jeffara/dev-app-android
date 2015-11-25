@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager = (ViewPager) findViewById(R.id.viewPagerID);
 
+        //Utiliza-se o adapter para fazer com que a cada click em uma tab, o viewPager tambem seja alterado para acompanhar a mudanca da tab
         TabsAdapter tabsAdapter = new TabsAdapter(getSupportFragmentManager());
         viewPager.setAdapter(tabsAdapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
